@@ -1,0 +1,214 @@
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+.row > img {
+    display: none;
+}
+        /* TO DO -      PARALLAX HERO
+                        GOOGLE FONTS
+        /*      NAV BAR     */
+#top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #22a;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    padding: 0 10%;
+    height: 50px;
+    z-index: 10;
+    border-bottom: 2px solid #f47;
+}
+
+#title-nav {
+    text-decoration: none;
+    color: #ff0;
+    font-size: 3.5vh;
+}
+#top-nav > h1 {
+    margin: 0;
+}
+
+#main-nav, #media-nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#main-nav {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+#media-nav {
+    width: 5%;
+}
+
+.center-nav {
+    text-decoration: none;
+    color: #ff0;
+    font-size: 2.5vh;
+    transition: 1s; 
+}
+
+.center-nav:hover {
+    background: #f47;
+    color: #000;
+}
+
+.center-nav {
+    padding: 12px 20px;
+}
+
+.fa-nav {
+    text-decoration: none;
+    color: #ff0;
+    transition: 1s;
+}
+.fa-nav:hover {
+    color: #f47;
+}
+
+.fa-nav > i {
+    font-size: 3vh;
+    margin: 0 5px;
+}
+
+        /*  HERO IMAGE  */
+
+#hero {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 4vh;
+    text-shadow: -2px 2px 2px #000;
+    -webkit-text-stroke: #000 1.6px;
+    background: navy url('images/hero.jpg') center / cover no-repeat;
+    height: 85vh;
+    width: 100%;
+}
+
+#hero > h1 {
+    padding-top: 15%;
+}
+
+#intro {
+    background: #22a;
+    color: #fff;
+    padding: 20px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+
+}
+
+#intro > h2 {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#content-background {
+    background: url('images/background.jpg') center / contain no-repeat;
+}
+
+.row {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    padding-bottom: 10vh;
+}
+
+.content-box-2 {
+    background: #22a;
+    color: #fff;
+    padding: 10px;
+    width: 40%;
+    font-size: 2vh;
+    border: 1px solid #fff;
+}
+.content-box-2 > h3 {
+    text-align: center;
+    font-size: 3vh;
+    color: #f47;
+}
+
+.content-box-1 {
+    background: #22a;
+    color: #fff;
+    width: 100%;
+    padding: 25px;
+    height: 33vh;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.content-box-1 > h2 {
+    text-align: center;
+    font-size: 3vh;
+    color: #f47;
+}
+.content-box-1 > p {
+    font-size: 2vh;
+    padding: 50px;
+}
+
+        /*  FOOTER  */
+
+        footer {
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            background: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            margin-top: -140px;
+        }
+        
+        #stamp {
+            width: 30%;
+            margin-right: 15%;
+            color: #777
+        }
+        
+        #my-link {
+            color: yellow;
+            /*  GOOGLE FONT THIS    */
+        }
+        
+        #contact-links {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        #contact-links > h4 {
+            font-size: 3vh;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        
+        #contact-links > a > i {
+            font-size: 2.5vh;
+        }
+        
+        #contact-links > a {
+            text-decoration: none;
+            color: #fff;
+            transition: 1s;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 2px 0;
+        }
+        #contact-links > a:hover {
+            background: #f47;
+            color: #000;
+        }

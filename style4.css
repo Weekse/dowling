@@ -1,0 +1,203 @@
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+        /* TO DO -      PARALLAX HERO
+                        GOOGLE FONTS
+        /*      NAV BAR     */
+#top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: #30d;
+    position: fixed;
+    top: 0;
+    width: 90%;
+    padding: 0 5%;
+    height: 50px;
+    z-index: 10;
+}
+
+#title-nav {
+    text-decoration: none;
+    color: #fe0;
+    font-size: 3.5vh;
+}
+#top-nav > h1 {
+    margin: 0 25px 0 0;
+}
+
+#main-nav, #media-nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#main-nav {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+#media-nav {
+    width: 5%;
+    margin-left: 25%;
+}
+
+.center-nav {
+    text-decoration: none;
+    color: #fe0;
+    font-size: 2.5vh;
+    transition: 1s; 
+}
+
+.center-nav:hover {
+    background: #fe0;
+    color: #30d;
+}
+
+.center-nav {
+    padding: 12px 20px;
+}
+
+.fa-nav {
+    text-decoration: none;
+    color: #000;
+    transition: 1s;
+}
+.fa-nav:hover {
+    color: #fe0;
+}
+
+.fa-nav > i {
+    font-size: 3vh;
+    margin: 0 5px;
+}
+
+        /*  HERO IMAGE  */
+
+#hero {
+    margin-top: 50px;
+    color: #fff;
+    font-size: 4vh;
+    text-shadow: -2px 2px 2px #000;
+    -webkit-text-stroke: #000 1.6px;
+    background: navy url('images/hero.jpg') center / cover no-repeat;
+    height: 85vh;
+    width: 100%;
+    animation: zoom 15s;
+    animation-fill-mode: forwards;
+    position: relative;
+    z-index: -2;
+}
+@keyframes zoom {
+    from {transform: scale(1)}
+    to {transform: scale(1.15)}
+}
+
+#hero > h1 {
+    padding: 15% 0 0 7%;
+    color: #fe0
+}
+        /*  MAIN    */
+    
+#intro {
+    display: none;
+}
+
+.row > img {
+    display: none;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    background: #30d;
+}
+
+#cb2 {
+    display: none;
+}
+
+.row {
+    width: 25%;
+    padding: 75px 0;
+    border: 1px solid #fe0;
+    text-align: center;
+    color: #fe0;
+    font-size: 3vh;
+    cursor: pointer;
+    transition: 1s;
+}
+.row:hover {
+    background: #fe0;
+    color: #30d;
+    box-shadow: -6px 6px 2px #000;
+    transform: scale(1.1);
+}
+p {
+    display: none;
+}
+.content-box-1:after, .content-box-2:after {
+    content: 'READ MORE';
+}
+
+/*  FOOTER  */
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: #000;
+    color: #fe0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#stamp {
+    width: 30%;
+    margin-right: 15%;
+    color: #777
+}
+
+#my-link {
+    color: yellow;
+    /*  GOOGLE FONT THIS    */
+}
+
+#contact-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact-links > h4 {
+    font-size: 3vh;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#contact-links > a > i {
+    font-size: 2.5vh;
+}
+
+#contact-links > a {
+    text-decoration: none;
+    color: #fe0;
+    transition: 1s;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 2px 0;
+}
+#contact-links > a:hover {
+    background: #fe0;
+    color: #30d
+}
